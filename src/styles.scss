@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+* {
+  
+  --365-primary-color: #004054;
+  --365-secondary-color: #45dbcc;
+
+  --bs-nav-tabs-link-hover-border-color: var(--365-secondary-color);
+  --bs-nav-link-hover-color: var(--365-secondary-color);
+  --bs-nav-link-color: white;
+}
+
+html,
+body {
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+  background-color: var(--365-primary-color);
+}
+
+label {
+  color: white;
+}
+
+input {
+  &.form-control,
+  &.form-control:focus {
+    color: var(--365-primary-color);
+  }
+}
+
+.spinner-border {
+  --bs-spinner-width: 5rem;
+  --bs-spinner-height: 5rem;
+}

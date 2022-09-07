@@ -1,0 +1,11 @@
+:host {
+    display: flex;
+    flex: 1;
+    min-height: 100%;
+    width: 100%;
+    background-image: url('/assets/images/logo.png');
+    background-position: top left;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    padding: 200px;
+}

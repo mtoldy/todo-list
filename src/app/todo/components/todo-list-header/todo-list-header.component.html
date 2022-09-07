@@ -1,0 +1,17 @@
+<h1>TO-DO List</h1>
+<div class="row">
+
+  <div class="todo-add-form col-sm-12 offset-sm-0 col-md-6 offset-md-3 ">
+    <label for="new-todo" class="form-label">What needs to be done?</label>
+    <input
+      type="text"
+      id="new-todo"
+      class="form-control"
+      placeholder="new task"
+      autofocus=""
+      [(ngModel)]="newTodo.title"
+      (keyup.enter)="addTodo()"
+    />
+    <span class="todo-add" title="add" (click)="addTodo()">+</span>
+  </div>
+</div>

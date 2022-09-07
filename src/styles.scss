@@ -21,6 +21,13 @@ body {
   background-color: var(--365-primary-color);
 }
 
+h1 {
+  text-align: center;
+  background-color: var(--365-secondary-color);
+  color: white;
+  padding: 24px 0;
+}
+
 label {
   color: white;
 }

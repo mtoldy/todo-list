@@ -1,0 +1,16 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.todo-add-form  {
+    position: relative;
+    .todo-add {
+        position: absolute;
+        right: 25px;
+        bottom: 12px;
+        cursor: pointer;
+    }
+}

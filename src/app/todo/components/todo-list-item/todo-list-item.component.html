@@ -1,0 +1,11 @@
+<span>
+  <input
+    [attr.id]="attrId"
+    class="form-check-input"
+    type="checkbox"
+    (click)="toggleTodoComplete(todo)"
+    [checked]="todo.complete"
+  />
+  <label [attr.for]="attrId" class="form-check-label">{{ todo.title }}</label>
+</span>
+<button class="btn btn-danger" (click)="removeTodo(todo)">Remove</button>

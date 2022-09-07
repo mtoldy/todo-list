@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="todo-add-form col-sm-12 offset-sm-0 col-md-6 offset-md-3">
+    <ng-container *ngIf="todos.length > 0; else empty">
+      <ul class="todo-list">
+        <li *ngFor="let todo of getTodos()" [class.completed]="todo.complete">
+          <app-todo-list-item
+            [todo]="todo"
+            (toggleComplete)="onToggleTodoComplete($event)"
+            (remove)="onRemoveTodo($event)"
+          ></app-todo-list-item>
+        </li>
+      </ul>
+    </ng-container>
+
+    <ng-template #empty> <span [ngStyle]="{'color': 'white', 'textAlign': 'center', 'display': 'block'}">Your To-DO list is empty!</span> </ng-template>
+  </div>
+</div>

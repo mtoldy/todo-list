@@ -17,9 +17,9 @@ export interface Todo {
 export class TodoComponent {
     public todos: Todo[] = [];
 
-    constructor(private /** TODO remove private */ todoService: TodoService) { 
-        todoService.getAllTodos().subscribe(todos => this.todos = todos);
-    }
+  constructor(private todoService: TodoService) {
+    todoService.getAllTodos().subscribe((todos) => (this.todos = todos));
+  }
 
     onAddTodo(todo: Todo) {
         this.todoService

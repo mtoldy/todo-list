@@ -10,8 +10,7 @@
       placeholder="new task"
       autofocus=""
       [(ngModel)]="newTodo.title"
-      (keyup.enter)="addTodo()"
-    />
-    <span class="todo-add" title="add" (click)="addTodo()">+</span>
+    <button class="btn btn-outline-success todo-add"
+            (click)="addTodo()">Add</button>
   </div>
 </div>

@@ -9,7 +9,7 @@ Welcome to README. Bellow are some tasks what we need to tackle. Can you help us
   *Hint2*: you can reuse existing component.
 * When the task is completed, its title should be striked through. Can you do it only by modification of the host element?
 * Sometimes the network can be slower, so it would be nice to show the rotating spinner during every network request. The spinner is prepared in `shared/components/spinner`.
-* Sometimes a network error can occure. In the configurationService we have defined how many ("n") retry attempt should we used before the error should occure. So if the network error rise, retry request "n" times. Imagine we provide this app as a library, so user can define own retry times. So don't change anything in the configurationService and use the Injection Token instead.
+* Sometimes a network error can occure. In the configurationService we have defined how many ("n") retry attempts should we use before the error occures. If the network error rises, you'll have to retry the request "n" times. Imagine we provided this app as a library, so the user can define his own retry times. You don't need to change anything in the configurationService and use the Injection Token instead.
 * Animation on the task list is not optimized, especially when it contains more than 10 tasks. Do you have any idea how to solve it?
 
 ## Development server
